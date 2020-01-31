@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+
+
+@include sm {
+    header {
+        position: relative;
+        // border: 1px solid green;
+        padding: 15px;
+        nav {
+            // border: 1px solid red;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nodisplay {
+                display: none;
+            }
+
+            .menu {
+                display: none;
+            }
+            .sm-menu {
+                width: 100vw;
+                height: 92vh;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                background: $dark-Violet;
+                font-family: 'Open Sans';
+                display: swap;
+                font-weight: 700;
+                transition: all .5s linear;
+                
+                .menu-item {
+                    margin: 15px;
+                    a {
+                        display: block;
+                        text-transform: uppercase;
+                        color: $very-light-gray;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 15px;
+                    }
+                    a.active {
+                        border: 2px solid $very-light-gray;
+                    }
+                }
+
+                .pattern {
+                    position: relative;
+                    // margin-top: 15px;
+
+                    img {
+                        position: absolute;
+                        top: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include lg {
+    header {
+        padding: 20px;
+        nav {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+    
+            .logo {
+    
+            }
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Open Sans';
+                display: swap;
+                font-weight: 700;
+    
+                .menu-item {
+                    margin-left: 10px;
+                    
+
+                    a {
+                        color: $grayish-Blue;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        padding: 5px 15px;
+
+                        &:hover {
+                            color: $very-dark-violet;
+                        }
+
+                        &.active {
+                            color: $very-dark-violet;
+                        }
+                    }
+                    
+                }
+                .menu-item:last-child {
+                    a {
+                        border: 2px solid $very-dark-violet;
+                        color: $very-dark-violet;
+
+                        &:hover {
+                            background: $very-dark-violet;
+                            color: $very-light-gray;
+                        }
+                    }
+
+                }
+            }
+            .sm-menu,.cancel,.burger {
+                display: none;
+            }
+        }
+    }
+}

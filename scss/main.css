@@ -1,0 +1,171 @@
+@import url("https://fonts.google.com/specimen/Karla");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+  font-size: 16px;
+  font-family: "Karla" !important;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+@media (max-width: 375px) {
+  header {
+    position: relative;
+    padding: 15px;
+  }
+  header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .nodisplay {
+    display: none;
+  }
+  header nav .menu {
+    display: none;
+  }
+  header nav .sm-menu {
+    width: 100vw;
+    height: 92vh;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: #2d2640;
+    font-family: 'Open Sans';
+    display: swap;
+    font-weight: 700;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+  }
+  header nav .sm-menu .menu-item {
+    margin: 15px;
+  }
+  header nav .sm-menu .menu-item a {
+    display: block;
+    text-transform: uppercase;
+    color: #fafafa;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+  }
+  header nav .sm-menu .menu-item a.active {
+    border: 2px solid #fafafa;
+  }
+  header nav .sm-menu .pattern {
+    position: relative;
+  }
+  header nav .sm-menu .pattern img {
+    position: absolute;
+    top: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 20px;
+  }
+  header nav {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'Open Sans';
+    display: swap;
+    font-weight: 700;
+  }
+  header nav .menu .menu-item {
+    margin-left: 10px;
+  }
+  header nav .menu .menu-item a {
+    color: #b2b5b8;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+  }
+  header nav .menu .menu-item a:hover {
+    color: #2b272f;
+  }
+  header nav .menu .menu-item a.active {
+    color: #2b272f;
+  }
+  header nav .menu .menu-item:last-child a {
+    border: 2px solid #2b272f;
+    color: #2b272f;
+  }
+  header nav .menu .menu-item:last-child a:hover {
+    background: #2b272f;
+    color: #fafafa;
+  }
+  header nav .sm-menu, header nav .cancel, header nav .burger {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .landing .lg-landing {
+    display: none;
+  }
+  .landing .intro {
+    margin: -4px;
+    background: #2d2640;
+    z-index: -1px;
+  }
+  .landing .intro .content {
+    padding: 60px 20px;
+    color: #fafafa;
+    text-align: center;
+  }
+  .landing .intro .content .h1 {
+    font-size: 1.8rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

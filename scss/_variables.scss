@@ -1,0 +1,22 @@
+// Primary Color
+$dark-Violet: hsl(256, 26%, 20%);
+$grayish-Blue: hsl(210, 4%, 71%);
+
+// Neutral Color
+$very-dark-violet: hsl(270, 9%, 17%);
+$dark-grayish-violet: hsl(273, 4%, 51%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+@mixin sm {
+    @media(max-width: 375px) {
+      @content;
+    }
+  }
+
+  @mixin lg {
+    @media(min-width: 1200px) {
+      @content;
+    }
+  }
+  
+  

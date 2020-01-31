@@ -1,0 +1,27 @@
+@include sm {
+    .landing {
+        .lg-landing {
+            display: none;
+        }
+
+        .intro {
+            margin: -4px;
+            background: $dark-Violet;
+            z-index: -1px;
+
+            .content {
+                padding: 60px 20px;
+                color: $very-light-gray;
+                text-align: center;
+
+                .h1 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@include lg {
+    
+}
