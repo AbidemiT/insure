@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/specimen/Karla");
+
 @import "./variables";
 
 html, body, div, span, object, iframe,
@@ -25,8 +25,9 @@ time, mark, audio, video {
 body {
     box-sizing: border-box;
     line-height:1;
-    font-size: 16px;
-    font-family: "Karla" !important;
+}
+.over {
+    overflow: hidden;
 }
 
 article,aside,details,figcaption,figure,

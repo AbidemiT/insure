@@ -1,5 +1,10 @@
+@import url("https://fonts.google.com/specimen/Karla");
+
 @include sm {
     .landing {
+        font-size: 16px;
+        font-family: Karla;
+
         .lg-landing {
             display: none;
         }

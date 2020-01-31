@@ -16,7 +16,7 @@ function toggleMenu() {
     cancel.classList.toggle("nodisplay");
     burger.classList.toggle("nodisplay");
     sm.classList.toggle("nodisplay");
-    body.style.overflow = "hidden";
+    body.classList.toggle("over");
 }
 
 function activeItem(e) {
